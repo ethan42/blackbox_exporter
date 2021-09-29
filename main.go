@@ -32,7 +32,7 @@ import (
 
 	"github.com/ethan42/common/expfmt"
 	"github.com/ethan42/common/promlog"
-	"github.com/ethan42/common/promlog/flag"
+	//	"github.com/ethan42/common/promlog/flag"
 	"github.com/ethan42/common/version"
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
@@ -214,7 +214,7 @@ func main() {
 
 func run() int {
 	promlogConfig := &promlog.Config{}
-	flag.AddFlags(kingpin.CommandLine, promlogConfig)
+	// flag.AddFlags(kingpin.CommandLine, promlogConfig)
 	kingpin.Version(version.Print("blackbox_exporter"))
 	kingpin.HelpFlag.Short('h')
 	kingpin.Parse()

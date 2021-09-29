@@ -2,7 +2,7 @@ module github.com/ethan42/blackbox_exporter
 
 require (
 	github.com/andybalholm/brotli v1.0.2
-	github.com/ethan42/common v0.31.3
+	github.com/ethan42/common v0.31.4
 	github.com/go-kit/kit v0.10.0
 	github.com/miekg/dns v1.1.41
 	github.com/pkg/errors v0.9.1
