@@ -40,7 +40,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"golang.org/x/net/publicsuffix"
 
-	"github.com/prometheus/blackbox_exporter/config"
+	"github.com/ethan42/blackbox_exporter/config"
 )
 
 func matchRegularExpressions(reader io.Reader, httpConfig config.HTTPProbe, logger log.Logger) bool {

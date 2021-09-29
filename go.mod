@@ -1,4 +1,4 @@
-module github.com/prometheus/blackbox_exporter
+module github.com/ethan42/blackbox_exporter
 
 require (
 	github.com/andybalholm/brotli v1.0.2

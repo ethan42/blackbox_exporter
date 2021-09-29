@@ -25,7 +25,7 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/prometheus/blackbox_exporter/config"
+	"github.com/ethan42/blackbox_exporter/config"
 )
 
 func dialTCP(ctx context.Context, target string, module config.Module, registry *prometheus.Registry, logger log.Logger) (net.Conn, error) {
