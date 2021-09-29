@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
+	pconfig "github.com/ethan42/common/config"
 	"github.com/go-kit/kit/log"
 	"github.com/prometheus/client_golang/prometheus"
-	pconfig "github.com/prometheus/common/config"
 
 	"github.com/prometheus/blackbox_exporter/config"
 )

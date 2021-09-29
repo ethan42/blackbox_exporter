@@ -3,15 +3,15 @@ go:
     # .circle/config.yml should also be updated.
     version: 1.16
 repository:
-    path: github.com/prometheus/blackbox_exporter
+    path: github.com/ethan42/blackbox_exporter
 build:
     flags: -a -tags netgo
     ldflags: |
-        -X github.com/prometheus/common/version.Version={{.Version}}
-        -X github.com/prometheus/common/version.Revision={{.Revision}}
-        -X github.com/prometheus/common/version.Branch={{.Branch}}
-        -X github.com/prometheus/common/version.BuildUser={{user}}@{{host}}
-        -X github.com/prometheus/common/version.BuildDate={{date "20060102-15:04:05"}}
+        -X github.com/ethan42/common/version.Version={{.Version}}
+        -X github.com/ethan42/common/version.Revision={{.Revision}}
+        -X github.com/ethan42/common/version.Branch={{.Branch}}
+        -X github.com/ethan42/common/version.BuildUser={{user}}@{{host}}
+        -X github.com/ethan42/common/version.BuildDate={{date "20060102-15:04:05"}}
 tarball:
     files:
         - blackbox.yml
